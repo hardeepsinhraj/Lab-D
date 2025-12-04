@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forest Video Showcase</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Video | Lesson 13 COMP1072</title>
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-
-    <div class="container">
-        <h1>Forest Serenity</h1>
-        <p>Experience the calm atmosphere and peaceful sounds of the forest.</p>
-
-        <video controls autoplay muted loop>
-            <!-- Replace "forest.mp4" with your exported file name -->
-            <source src="forest.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-
+    <!-- STEP 1: Insert video element. -->
+    
+    <header>
+         <video 
+    autoplay 
+    loop 
+    playsinline 
+    poster="media/forest.jpg"
+>
+        <!-- STEP 2: Add the necessary attributes (autoplay muted loop playsinline) to the video start tag. -->
+        <!-- STEP 3: Add a poster image to render while video is loading. -->
+        <!-- STEP 4: Nest a source element pointing to the video file, and include the proper MIME type. Proceed to styles.css for next step. -->
+        <source src="media/forest.mp4" type="video/mp4"> </video>
+        <hgroup>
+            <h1>The Forest Are Calling</h1>
+             <h1>The Forest is Alive</h1>
+            <p>Come hiking with us this season</p>
+             <p>Experience the calm and beauty of untouched nature</p>
+            <button>Book Now</button>
+        </hgroup>
+    </header>
+    <!-- Thanks to derondel for video at https://pixabay.com/videos/mountain-snow-winter-drone-145447/ -->
 </body>
 </html>
